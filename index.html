@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Record Audio</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Record Audio</h1>
+    </header>
+    <main>
+        <p>Use 'REC' and 'STOP' buttons to start and stop the recoring <br>
+            You can download your recording from player two </P>
+        <p>REC = start recording <br>
+            STOP = stop recording </p>
+        
+        
+        <p><button id="btnStart">REC</button><br/>
+        <button id="btnStop">STOP</button></p>
+        
+        <video 
+            controls muted="muted" 
+            poster="" >
+        </video>
+        
+        <video 
+            id="vid2" 
+            controls poster="" 
+            title="RecordAudio Output">
+        </video>
+        
+        <!-- could save to canvas and do image manipulation and saving too -->
+    </main>    
+    <script type="text/javascript" src="./js/RecordFunction.js"></script>
+    
+</body>
+</html>
