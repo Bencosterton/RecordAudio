@@ -2,26 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Record Audio</title>
+    <title>Online Audio Recorder</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="./css/main.css">
-    <script type="text/javascript" src="./js/RecordFunction.js"></script>
     
 </head>
 <body>
     <header>
-        <h1>Record Audio</h1>
+        <h1>Online Audio Recorder</h1>
     </header>
     <main>
-        <p>Use 'REC' and 'STOP' buttons to start and stop the recoring <br>
-            You can download your recording from player two </P>
-        <p>REC = start recording <br>
-            STOP = stop recording </p>
-        
-        
-        <p><button id="btnStart">REC</button><br/>
-        <button id="btnStop">STOP</button></p>
-        
+        <p> Note: Tips for recording system/driver output bellow </P>
+        <p>
+        <style>
+            
+            </style>
+            <button id="btnStart" class="button" style="vertical-align:middle"><span>Record </span></button><br>
+             <button id="btnStop" class="button" style="vertical-align:middle"><span>Stop </span></button>
+
+            
+        <br>
+
         <video 
         id="vid1"
             controls muted="muted" 
@@ -36,11 +37,27 @@
             title="RecordAudio Output">
         </video> 
         <p>Recorder output</p>
+        <br>
+        <br>
         
        
     </main>    
-      
+    <script type="text/javascript" src="./js/RecordFunction.js"></script>
     
+
+    <p>
+        Tips for recording system/driver output:<br>
+        <br>
+        If you are using an external sound source (Mixing console) make sure the default system input <br>
+        input is selected in sound settings settings.<br>
+        Your brower will only let you record the default audio input for your system<br><br>
+
+        Apps for re-routing sound sources from default to something interesting: <br> 
+
+        Mac: Soundflower <br>
+        Win: Cable <br>
+
+    </p>
 </body>
 
 </html>
