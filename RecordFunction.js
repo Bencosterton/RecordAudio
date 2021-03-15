@@ -4,7 +4,7 @@ let constraintObj = {
 }; 
 
 
-//handle older browsers that might implement getUserMedia in some way
+//This will take care of old browsers.
 if (navigator.mediaDevices === undefined) {
     navigator.mediaDevices = {};
     navigator.mediaDevices.getUserMedia = function(constraintObj) {
@@ -33,7 +33,7 @@ if (navigator.mediaDevices === undefined) {
 
 navigator.mediaDevices.getUserMedia(constraintObj)
 .then(function(mediaStreamObj) {
-    //connect the media stream to the first video element
+    //This will connect the audio to player1
     let video = document.querySelector('video');
     if ("srcObject" in video) {
         video.srcObject = mediaStreamObj;
@@ -43,7 +43,7 @@ navigator.mediaDevices.getUserMedia(constraintObj)
     }
     
     video.onloadedmetadata = function(ev) {
-        //show in the video element what is being captured by the webcam
+        //Allows a live auido monitor
         video.play();
     };
     
@@ -77,4 +77,3 @@ navigator.mediaDevices.getUserMedia(constraintObj)
 }
 
 );
-
