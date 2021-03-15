@@ -1,6 +1,6 @@
 body {
   font-family: system-ui;
-  background: #153e5a;
+  background: #282c2f;
   color: white;
   text-align: center;
 }
@@ -12,7 +12,7 @@ header {
 button {          
     display: inline-block;
     border-radius: 4px;
-    background-color: #f4511e;
+    background-color: #17866e;
     border: none;
     color: #FFFFFF;
     text-align: center;
